@@ -1,0 +1,15 @@
+@use '../utils/mixins';
+@use '../utils/vars';
+
+.who-am-i {
+  margin-bottom: 12px;
+}
+
+.opening {
+  color: vars.$main-text-color;
+  @include mixins.font(16px, 700);
+}
+
+#who-am-i {
+  padding-top: 80px;
+}

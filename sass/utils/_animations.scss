@@ -1,0 +1,37 @@
+@use './vars';
+
+@keyframes rainbow {
+  0% {
+    background-color: vars.$head-n-foot-border;
+  }
+  10% {
+    background-color: #e7bc7c;
+  }
+  20% {
+    background-color: #e5e77c;
+  }
+  30% {
+    background-color: #9ee77c;
+  }
+  40% {
+    background-color: #7ce793;
+  }
+  50% {
+    background-color: #7ce7cc;
+  }
+  60% {
+    background-color: #7ccee7;
+  }
+  70% {
+    background-color: #7c95e7;
+  }
+  80% {
+    background-color: #aa7ce7;
+  }
+  90% {
+    background-color: #e77cd9;
+  }
+  100% {
+    background-color: #e77c85;
+  }
+}

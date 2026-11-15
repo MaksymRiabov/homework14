@@ -1,0 +1,16 @@
+form .identity,
+.stats {
+  background-color: antiquewhite;
+}
+
+.identity + fieldset {
+  background-color: rgb(201, 227, 217);
+}
+
+form fieldset:last-of-type {
+  background-color: lavenderblush;
+}
+
+form fieldset:nth-of-type(4) {
+  background-color: lightpink;
+}

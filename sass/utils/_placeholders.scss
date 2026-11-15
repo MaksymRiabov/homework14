@@ -1,0 +1,10 @@
+%head-foot-transition {
+  transition:
+    color 500ms linear,
+    background-color 500ms linear;
+}
+
+%head-foot-hover {
+  color: darkred;
+  background-color: lightpink;
+}

@@ -1,0 +1,26 @@
+@use '../utils/mixins';
+@use '../utils/vars';
+@use '../utils/placeholders';
+
+header {
+  background-image: url('../images/header-img.jpg');
+  background-size: cover;
+  @include mixins.border(solid, dotted);
+  border-color: vars.$head-n-foot-border;
+  border-left-width: 6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 25px 50px;
+
+  a {
+    @extend %head-foot-transition;
+
+    &:hover,
+    &:focus {
+      @extend %head-foot-hover;
+    }
+  }
+}

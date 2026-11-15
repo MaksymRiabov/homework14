@@ -1,0 +1,26 @@
+@use '../utils/placeholders';
+@use '../utils/vars';
+
+footer {
+  background: linear-gradient(to left, #f3dbd2, vars.$head-n-foot-border);
+  border: 6px solid vars.$head-n-foot-border;
+}
+
+address {
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    padding: 20px 0;
+    @extend %head-foot-transition;
+
+    &:hover,
+    &:focus {
+      @extend %head-foot-hover;
+    }
+  }
+}
+
+.first-link {
+  margin-right: 12px;
+}

@@ -1,0 +1,9 @@
+@mixin border($left, $right) {
+  border-left-style: $left;
+  border-right-style: $right;
+}
+
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}

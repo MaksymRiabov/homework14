@@ -1,0 +1,61 @@
+body {
+  font-family: 'Bitter', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3a1909;
+  font-size: 20px;
+}
+
+section {
+  padding-bottom: 12px;
+}
+
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+section > p {
+  color: red;
+}
+
+p::first-letter {
+  font-weight: 700;
+}
+
+.index-main-section {
+  background-color: #f7d7cbe7;
+
+  & img:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 20px;
+  }
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filling-text {
+  color: brown;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+ul li:first-child {
+  color: blueviolet;
+  font-weight: 700;
+}
