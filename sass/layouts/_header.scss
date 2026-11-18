@@ -1,12 +1,11 @@
-@use '../utils/mixins';
-@use '../utils/vars';
-@use '../utils/placeholders';
+
+@use '../utils';
 
 header {
   background-image: url('../images/header-img.jpg');
   background-size: cover;
-  @include mixins.border(solid, dotted);
-  border-color: vars.$head-n-foot-border;
+  @include utils.border(solid, dotted);
+  border-color: utils.$head-n-foot-border;
   border-left-width: 6px;
   position: fixed;
   top: 0;

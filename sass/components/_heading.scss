@@ -1,5 +1,4 @@
-@use '../utils/vars';
-@use '../utils/animations';
+@use '../utils';
 
 h1,
 h2 {
@@ -7,7 +6,7 @@ h2 {
   margin-inline: auto;
   text-align: center;
   text-decoration: underline;
-  color: vars.$h1-color;
+  color: utils.$h1-color;
   margin-bottom: 16px;
   animation: rainbow 5s ease-in-out infinite alternate;
 }
@@ -19,10 +18,10 @@ h2 {
 
 h1::before {
   content: '➜';
-  color: vars.$h1-color;
+  color: utils.$h1-color;
 }
 
 h1::after {
   content: '✦';
-  color: vars.$h1-color;
+  color: utils.$h1-color;
 }

@@ -1,13 +1,12 @@
-@use '../utils/mixins';
-@use '../utils/vars';
+@use '../utils';
 
 .who-am-i {
   margin-bottom: 12px;
 }
 
 .opening {
-  color: vars.$main-text-color;
-  @include mixins.font(16px, 700);
+  color: utils.$main-text-color;
+  @include utils.font(16px, 700);
 }
 
 #who-am-i {

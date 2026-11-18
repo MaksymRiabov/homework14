@@ -1,9 +1,8 @@
-@use '../utils/placeholders';
-@use '../utils/vars';
+@use '../utils';
 
 footer {
-  background: linear-gradient(to left, #f3dbd2, vars.$head-n-foot-border);
-  border: 6px solid vars.$head-n-foot-border;
+  background: linear-gradient(to left, #f3dbd2, utils.$head-n-foot-border);
+  border: 6px solid utils.$head-n-foot-border;
 }
 
 address {

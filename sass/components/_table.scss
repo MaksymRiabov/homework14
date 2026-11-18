@@ -1,24 +1,24 @@
 table {
   border-collapse: collapse;
-}
 
-thead {
-  background-color: #e6cdb6e7;
-}
+  thead {
+    background-color: #e6cdb6e7;
 
-th {
-  text-align: center;
-}
+    th {
+      text-align: center;
 
-th,
-td {
-  border: solid 2px black;
-}
+      &.no-border-top {
+        border-top: none;
+      }
 
-.no-border-top {
-  border-top: none;
-}
+      &.no-border-bottom {
+        border-bottom: none;
+      }
+    }
+  }
 
-.no-border-bottom {
-  border-bottom: none;
+  th,
+  td {
+    border: solid 2px black;
+  }
 }
