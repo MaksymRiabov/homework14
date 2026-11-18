@@ -12,6 +12,18 @@ a {
 section {
   padding-bottom: 12px;
 }
+section.index-main-section {
+  background-color: rgba(247, 215, 203, 0.9058823529);
+}
+section.index-main-section img:first-of-type {
+  margin-bottom: 50px;
+}
+section.index-main-section:last-of-type {
+  padding-bottom: 20px;
+}
+section.index-main-section p:last-child {
+  margin-bottom: 0;
+}
 section > p {
   color: red;
 }
@@ -28,19 +40,6 @@ p::first-letter {
   font-weight: 700;
 }
 
-.index-main-section {
-  background-color: rgba(247, 215, 203, 0.9058823529);
-}
-.index-main-section img:first-of-type {
-  margin-bottom: 50px;
-}
-.index-main-section:last-of-type {
-  padding-bottom: 20px;
-}
-.index-main-section p:last-child {
-  margin-bottom: 0;
-}
-
 .filling-text {
   color: brown;
   font-style: italic;
@@ -51,7 +50,6 @@ p::first-letter {
 ul li:last-child {
   margin-bottom: 0;
 }
-
 ul li:first-child {
   color: blueviolet;
   font-weight: 700;
@@ -165,6 +163,17 @@ address a {
   margin-right: 12px;
 }
 
+button {
+  cursor: pointer;
+  border: 1px solid black;
+}
+button:hover {
+  background-color: deepskyblue;
+}
+button:focus {
+  border: solid 4px deepskyblue;
+}
+
 .container {
   width: 1400px;
   margin: 0 auto;
@@ -182,16 +191,14 @@ h2 {
   animation: rainbow 5s ease-in-out infinite alternate;
 }
 
-.sticky {
+h1.sticky {
   position: sticky;
   top: 70px;
 }
-
 h1::before {
   content: "➜";
   color: rgb(228, 8, 8);
 }
-
 h1::after {
   content: "✦";
   color: rgb(228, 8, 8);
@@ -218,18 +225,15 @@ table td {
 }
 
 form .identity,
-.stats {
+form .stats {
   background-color: antiquewhite;
 }
-
-.identity + fieldset {
+form .identity + fieldset {
   background-color: rgb(201, 227, 217);
 }
-
 form fieldset:last-of-type {
   background-color: lavenderblush;
 }
-
 form fieldset:nth-of-type(4) {
   background-color: lightpink;
 }
@@ -239,12 +243,4 @@ form fieldset:nth-of-type(4) {
   display: flex;
   justify-content: center;
   gap: 50px;
-}
-
-button:hover {
-  background-color: deepskyblue;
-}
-
-button:focus {
-  border: solid 4px deepskyblue;
 }/*# sourceMappingURL=main.css.map */

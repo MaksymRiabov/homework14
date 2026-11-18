@@ -11,17 +11,19 @@ h2 {
   animation: rainbow 5s ease-in-out infinite alternate;
 }
 
-.sticky {
+h1 {
+&.sticky {
   position: sticky;
   top: 70px;
 }
 
-h1::before {
+&::before {
   content: '➜';
   color: utils.$h1-color;
 }
 
-h1::after {
+&::after {
   content: '✦';
   color: utils.$h1-color;
+}
 }

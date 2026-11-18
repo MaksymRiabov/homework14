@@ -6,9 +6,9 @@
 @use './layouts/hobby';
 @use './layouts/footer';
 
+@use './components/button';
 @use './components/container';
 @use './components/heading';
 @use './components/table';
 @use './components/form';
 @use './components/nav';
-@use './components/button';

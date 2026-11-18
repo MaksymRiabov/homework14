@@ -1,7 +1,12 @@
-button:hover {
-  background-color: deepskyblue;
-}
+button {
+  cursor: pointer;
+  border: 1px solid black;
 
-button:focus {
-  border: solid 4px deepskyblue;
+  &:hover {
+    background-color: deepskyblue;
+  }
+
+  &:focus {
+    border: solid 4px deepskyblue;
+  }
 }
